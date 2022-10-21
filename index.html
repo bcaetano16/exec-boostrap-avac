@@ -55,11 +55,14 @@
         }
 
 
+        .row {
+            flex-wrap: nowrap;
+            max-width: 100%;
+            width: 33%;
+        }
 
-
-        #card3 {
-            color: #a54586;
-            max-height: 664px;
+        .col-4 {
+            width: 100%;
         }
 
         section {
@@ -451,7 +454,15 @@
 
             }
 
+            .row {
+                flex-wrap: wrap;
+                max-width: 100%;
+                width: 100%;
+            }
 
+            .col-4 {
+                width: 100%;
+            }
             /*Seções*/
             /*nav li {
                 list-style: none;
@@ -506,8 +517,6 @@
 
             .social-links li,
             img {
-                display: none;
-                height: 21px;
                 margin-right: 2px;
                 text-decoration: none;
             }
@@ -528,6 +537,9 @@
                 font-size: 40px;
             }
 
+            .container.espaco{
+                margin-left: 200px;
+            }
 
             header nav {
                 background-color: #a54586;
@@ -535,7 +547,12 @@
                 font-weight: bold;
 
             }
-          
+
+            #navbar1>.container{
+                display: block;
+            }
+
+
             nav li {
                 display: flex;
                 font-size: 18px;
@@ -566,6 +583,26 @@
                 margin-bottom: 8px;
             }
 
+            .row {
+                flex-wrap: wrap;
+                max-width: 100%;
+                width: 100%;
+            }
+
+            .col-4 {
+                width: 50%;
+            }
+
+            #carousel-exemplo img{
+            width:50%;
+            height: 80%;
+            max-width: 400px;
+            max-height: 500px;
+            border-radius: 16px;
+            overflow-y: hidden;
+            overflow-x: hidden;
+            margin-left: 50px;
+        }
 
             #profissionais p {
                 color: #a54586;
@@ -623,6 +660,15 @@
                 font-size: calc(1.0rem + .6vw);
             }
 
+           
+        .navbar-expand-lg .navbar-collapse {
+            display: table-caption   !important;
+            background-color: #fff;
+            flex-wrap: wrap;
+            /* flex-basis: auto;*/
+        }
+
+    
             footer {
                 background-color: #fff;
                 color: #a54586;
@@ -668,7 +714,7 @@
 
     </header>
     <header id="cabecalho">
-        <div class="navbar navbar-expand-lg">
+        <div id="navbar1" class="navbar navbar-expand-lg">
             <div class="container">
                 <nav class="collapse navbar-collapse justify-content-end" id="menu">
                     <ul class="nav navbar-nav nav-pills">
@@ -708,7 +754,7 @@
 
 
                 <div class="container">
-                    <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                    <div id="carousel-exemplo" class="carousel carousel-fade slide " data-bs-ride="carousel">
                         <div class="carousel-inner w-100">
 
                             <div data-bs-interval="3000" class="carousel-item active">
@@ -766,7 +812,7 @@
                     <div class="tab-pane active" id="aba1">
                         <div class="container">
                             <div class="row">
-                                <div class="col-4 w-50">
+                                <div class="col-4">
                                     <article class="card">
                                         <header class="card-header">
                                             Desenvolvimento Web
@@ -786,7 +832,7 @@
                                         </footer>
                                     </article>
                                 </div>
-                                <div class="col-4 w-50">
+                                <div class="col-4">
                                     <div class="card text-bg-dark">
                                         <header class="card-header">
                                             Venha trabalhar com a gente
@@ -802,7 +848,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4 w-100">
+                                <div class="col-4">
                                     <div class="card text-bg-white " id="card3">
                                         <div class="card-header">
                                             Espaço Família Saúde
